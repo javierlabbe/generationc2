@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+
+<body>
+    <script>
+        // ARREGLOS (ARRAY)
+        //conjunto de datos, ordenados según su ingreso, separados por coma
+        // TODOS los arreglos comienzan en la posición cero (0)
+        /*
+        Arreglo =
+        Lista =
+
+        */
+
+        var vocales = ["u", "i", "e", "o", "a"];
+        /* tiene 5 elementos, el ultimo está en la posición 4
+        el primero en la posición 0 */
+        console.log(vocales);
+        //length -> cantidad de elementos o tamaño del array.
+        console.log(vocales[0], vocales[1], vocales[2], vocales[3], vocales[4]);
+        console.log(vocales[5]); //no esta definido
+        console.log(vocales[-1]); // undefined
+        console.log(vocales[3 - 2]); // es lo mismo que vocales[1]
+        var arreglo3 = ["asdas", 132, true, null, [1, 2, 3]];
+
+        vocales[1] = "y"; //se está sobre escribiendo el dato de la posición 1 del array (posición especifica)
+        console.log(vocales);
+        vocales.push("i"); // push agrega un dato al final del array
+        console.log(vocales);
+
+        vocales.pop(); // pop elimina el último dato del arreglo
+        console.log(vocales);
+
+        vocales.pop();
+        vocales.pop();
+        vocales.pop();
+        vocales.pop();
+        vocales.pop();
+        console.log(vocales);
+
+        var arreglo1 = [];
+        console.log(arreglo1.length); //muestra el largo del arreglo1, en este caso 0
+        arreglo1.push(1); // se agrega en la última posición, que en este caso coincide con la primera.
+        arreglo1.push(8); // insertará el 8 en la posicion 1.    
+        var ultimo = arreglo1.pop();
+        console.log(ultimo); //8
+
+        /*vocales = "aeiou";
+        console.log(vocales);
+        console.log("string aeiou", vocales[3]); //por definición los string son arreglos, por eso podemos recorrer sus letras como un array.
+        */
+
+
+        //
+    </script>
+</body>
+
+</html>
