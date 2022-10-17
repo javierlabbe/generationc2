@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1</title>
+    <script>
+        // <Script> dentro de esto se escribe JS
+        //el doble slash nos permite agregar comentario de una sola línea
+
+        /*
+        comentario de varias
+        lineas
+
+        */
+        console.log("hola mundo");
+        /* click derecho "open with live server" genera una url de un servidor web pequeño
+        que nos permite deployar nuestra página enseguida. Por lo tanto cualquier cambio en la consola
+        se ve reflejado automaticamente al guardar.
+
+        click derecho "open in browser" aqui no se refresca automaticamente
+        */
+        console.log("prueba"); // ; para terminar la instrucción
+
+        var nombre = "Javier";
+        var apellido = "Labbé";
+        var edad = 27;
+        var direccion = "Arica 161";
+
+        console.log("**********************");
+        console.log("");
+        console.log("--- DATOS PERSONALES ---");
+        console.log("");
+        console.log("- Nombre: " + nombre);
+
+        console.log("- Apellido: " + apellido);
+
+        console.log("- Edad: " + edad);
+
+        console.log("- Dirección: " + direccion);
+        console.log("");
+        console.log("**********************");
+
+        /*VARIABLES*/
+
+        // Espacio de memoria que puede cambiar en el tiempo
+        // tipos de variables: string, number, boolean, null
+        // el tipo de variable es definido por su contenido (typeof )
+        // el nombre de la variable debe ser significativo
+
+        //NO HACER:
+        /*
+        var nOmBReVarIaBLE -> no es claro.
+        var la casa -> no agregar espacio
+        */
+        /*HACER:
+        var laCasa: usar camelCase
+        var la_Casa
+        var LA_CASA -> CONSTANTES
+
+        La forma dependera del contexto!!! La empresa rige estas cosas.
+
+        */
+
+        /*Operatoria de variable */
+
+        var num_1 = 24;
+        var num_2 = 35;
+        var num_3 = 11;
+        /* INI 20221017 - jils- se agrega una nueva variable */
+        var num_4 = 12;
+        /* FIN 20221017 - jils- se agrega una nueva variable */
+
+        var total_suma = num_1 + num_2 + num_3;
+        console.log(total_suma);
+
+        var total_resta = num_1 - num_2 - num_3;
+        console.log(total_resta);
+
+        //Sobre escribir la variable
+        var edad = 28; //creando y asignando 
+        edad = 29; //sobre escribiendo
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
