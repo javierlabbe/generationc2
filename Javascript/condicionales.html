@@ -15,13 +15,39 @@
         validar o comprobar algo para tomar alguna decisión
 
         ESTRUCTURA:
-        Si la condición es verdadera ingreserá al if. -> condicion == true
+        ** Si la condición es verdadera (true) ingreserá al if. -> condicion == true
         
         if(condicion) {
             //dentro del if
         }
 
         NOTA: en la estructura inicial no va punto y coma (;) al finalizar.
+
+        */
+
+        var edad = parseInt(prompt("Ingresa tu edad", 0)); //NOTA: Prompt entrega un str por defecto. Por eso usar parseInt para convertir a number
+
+        if (edad >= 18) { //true, entrará al if. Al comprobar la condición solo hay dos posibles respuestas TRUE o FALSE.
+            console.log("es mayor de edad");
+        }
+
+        if (edad < 18) {
+            console.log("Es menor de edad");
+        }
+        console.clear();
+        //ELSE
+        if (edad >= 18) {
+            console.log("mayor de edad");
+        } else {
+            console.log("menor de edad");
+        }
+
+        //alternativa
+        if (edad < 18) {
+            console.log("menor de edad");
+        } else {
+            console.log("mayor de edad");
+        }
     </script>
 </body>
 
