@@ -48,6 +48,39 @@
         } else {
             console.log("mayor de edad");
         }
+
+        /*numero es mayor a 10 y menor a 20 */
+
+        var numero = parseInt(prompt("Ingrese un número", 0));
+
+        /*Conectores: 
+            - ampersand: && (y) ambas condiciones deben cumplirse ; Verdadero y Verdadero = Verdadero
+            - || (o) una de las dos condiciones debe cumplirse; Falso o Falso = Falso 
+
+            NOTA: poner máx. 6 condicionales dentro de la condición if.
+        */
+
+        //Validar si numero es mayor a 10 y menor a 20
+        if (numero > 10 && numero < 20) {
+            console.log(numero + " es mayor a 10 y menor a 20");
+        } else {
+            console.log(numero + " no cumple la condición");
+        }
+
+        //validar si un numero es mayor o menor o igual a cero
+
+        var numeroAValidar = parseInt(prompt("Ingrese un nuevo número", 0));
+
+        if (numeroAValidar == 0) {
+            console.log("El número es igual a cero");
+        } else if (numeroAValidar > 0) {
+            console.log("El número es mayor a cero");
+        } else {
+            console.log("El número es negativo");
+        }
+
+        //NOTA: el usar else e elseif permite ahorrar tiempo de procesamiento. Usar una cadena de if toma más tiempo.
+        // tiene sentido usar varios if si se están validando cosas diferentes.
     </script>
 </body>
 
