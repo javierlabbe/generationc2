@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2</title>
+</head>
+
+<body>
+    <script>
+        var nombre = prompt("Ingrese su nombre:", "Ej. Israel");
+        var apellido = prompt("Ingrese su apellido:", "Ej. Palma");
+        var edad = parseInt(prompt("ingresa tu edad:", 0));
+        var numero = parseInt(prompt("ingresa tu numero de telefono:", 323123131));
+        var direccion = prompt("Ingrese su dirección:", "Ej. Almirante barroso 66 ");
+        var correo = prompt("ingrese su correo electronico:", "Ej. grupo6@generation.org");
+
+        var Vedad = null
+        var requisito = null
+        var validar = false
+
+
+        if (edad >= 18) {
+            Vedad = "Es mayor de edad"
+            var requisito = "Felicidades, usted cumple con el requisito de edad para el programa de Generation!"
+            var validar = true
+
+        } else {
+            Vedad = "en menor de edad"
+            requisito = "Usted no cumple con el requisito de edad para el programa."
+            var validar = false
+        }
+        if (validar = true) {
+            console.log(requisito)
+        } else {
+            console.log(requisito)
+        }
+        document.write("**********************<br>");
+        document.write("");
+        document.write("--- DATOS PERSONALES ---");
+        document.write("");
+        document.write("- Nombre: " + nombre);
+
+        document.write("- Apellido: " + apellido);
+
+        document.write("- Edad: " + edad);
+        document.write(Vedad)
+
+        document.write("- Dirección: " + direccion, "\n");
+        document.write("");
+        document.write("- Su numero telefono: " + numero, "\n");
+
+        document.write("**********************");
+    </script>
+</body>
+
+</html>
