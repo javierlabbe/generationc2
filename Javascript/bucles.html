@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //BUCLE FOR
+
+        for (let i = 0; i < 10; i++ /*aqui se incrementa o decrementa*/ ) { //el valor de i se usa para posicionarse en un arreglo, para contar, para contar de 1 en 1, etc. 
+            console.log("el valor de i es", i); // el valor de inicio lo da uno.
+        }
+
+        /* NOTA: 
+            Variable definida con let crea una variable local, que nace y muere en el bloque del for (scope o ambito local)
+            una variable definida con VAR es global, funciona en todo el código de inicio a fin.*/
+        var numeros_pares = [2, 4, 6, 8, 10];
+
+        var valor = 0;
+        for (let i = 0; i < numeros_pares.length; i++) {
+            let element = numeros_pares[i]; //no es recomendable definir con var dentro de un for
+            valor = element;
+            console.log("La posición es: " + i, "\nEl elemento es: " + element);
+        }
+
+        console.log("element", valor);
+
+        /*
+            numeros_pares [numeros_pares.length-1] ; 
+            numeros_pares [5-1];
+            numeros_pares [4];*/
+
+        /*
+        VARIABLES ACUMULADORAS
+
+        variable = variable + algo;
+        */
+        var suma_pares = 0;
+        for (let i = 0; i < numeros_pares.length; i++) {
+            suma_pares = suma_pares + numeros_pares[i]
+        }
+
+        console.log("Suma total: " + suma_pares)
+    </script>
+</body>
+
+</html>
