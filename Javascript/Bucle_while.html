@@ -10,6 +10,44 @@
 
 <body>
     <script>
+        //WHILE
+
+        /*
+        ESTRUCTURA: 
+        
+        while(condicion){
+
+        }
+
+        */
+        var contador = 0; //definiendo la variable
+        while (contador <= 5) { // validando condición, mientras sea true entra al while
+            console.log("Somos bacanes los WashiTuring!!");
+            contador++; //suma un uno a la variable contador
+        }
+
+        /*
+        DIAGRAMA H
+        contador = 0; TRUE ; imprime
+        contador = 1; TRUE ; imprime
+            :
+        contador = 6; FALSE; no entra al while
+        
+        Bucle for: bueno cuando queremos repetir un ciclo y conocemos el Nº de veces a realizar.
+        Bucle while: bueno cuando quiero que se repita solo cuando se cumpla cierta condición.
+        */
+
+        var termino = true; //variable booleana (true or false)
+        var contador = 10;
+        console.log(contador);
+        //el término cuando contador sea igual a 200
+        while (termino) {
+            contador = contador + 10;
+            console.log(contador);
+            if (contador == 200) {
+                termino = false;
+            }
+        }
     </script>
 </body>
 
