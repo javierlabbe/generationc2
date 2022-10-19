@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+                //1.
+                 var arreglo = []; //definición array vacio.
+                for(let i=1; i<=255; i++){ 
+                    arreglo.push(i);
+                }
+                console.log(arreglo);
+
+                //2.
+                var arreglo_numeros = []; //definición array vacio.
+                for (let i = 1; i <= 1000; i++) { //para crear array del 1 al 1000
+                    arreglo_numeros.push(i);
+                }
+                console.log(arreglo_numeros);
+
+                var suma_pares = 0;
+                var contador = arreglo_numeros.length - 1
+                while (contador >= 0) {
+                    if (arreglo_numeros[contador] % 2 === 0) {
+                        suma_pares = suma_pares + arreglo_numeros[contador];
+                    }
+                    contador--;
+                }
+                console.log(suma_pares)
+
+                //3.
+                var arreglo_numeros = []; //definición array vacio.
+                for (let i = 1; i <= 10; i++) { //para crear array del 1 al 5000
+                    arreglo_numeros.push(i);
+                }
+                console.log(arreglo_numeros);
+
+                var suma_impares = 0;
+                var contador = arreglo_numeros.length - 1
+                while (contador >= 0) {
+                    if (arreglo_numeros[contador] % 2 !== 0) {
+                        suma_impares = suma_impares + arreglo_numeros[contador];
+                    }
+                    contador--;
+                }
+                console.log(suma_impares)
+
+                //7.
+                var arreglo = []; //definición array vacio.
+                for(let i=1; i<=50; i=i+2){ 
+          	        arreglo.push(i);
+                }
+                console.log(arreglo);
+
+                */
+
+        //5.
+
+        var arr = [10, 1, 5000, 4, 50, 100];
+        var num_max = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > num_max) {
+                num_max = arr[i];
+            }
+        }
+        console.log(num_max)
+
+        //https://codeshare.io/VZwp6b
+    </script>
+</body>
+
+</html>
