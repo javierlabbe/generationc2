@@ -11,34 +11,69 @@
 <body>
     <script>
         /*
-        FUNCIONES
-        - Trozo de código que solo se ejecutará cuando sea llamado.
-        - Realiza una acción específica
-        
-        *ESTRUCTURA*
+                FUNCIONES
+                - Trozo de código que solo se ejecutará cuando sea llamado.
+                - Realiza una acción específica
+                
+                *ESTRUCTURA*
 
-        function nombre_funcion(){
-            acción o código a ejecutar
-        }
+                function nombre_funcion(){
+                    acción o código a ejecutar
+                }
 
-        *LLAMADO*
-        
-        nombre_funcion();
-        */
+                *LLAMADO*
+                
+                nombre_funcion();
+                */
 
-        function ejemplo(){
+        var numeroImpar = 3;
+
+        function ejemplo() {
             console.log("Estoy dentro de la función");
         }
         ejemplo();
 
         let str = "fin";
-        function imprimir(cantidad){ //cantidad es parámetro de la función
-            console.log("parametro:",cantidad);
+
+        function imprimir(cantidad) { //cantidad es parámetro de la función
+            console.log("parametro:", cantidad);
             console.log(str);
+            numeroImpar = 5 //sobreescribiendo el valor de la variable
         }
         imprimir(3); // 3 es argumento
 
+        //RETORNO
+        function sumaNumeros() {
+            console.log(numeroImpar + 4); //console.log(5+4)
+            return numeroImpar + 4; //retornando la suma. Devuelve el resultado de la operación, es decir, el valor ahora es útil para capturarlo y trabajar con el
+        }
+        var numeroRetornado = sumaNumeros(); //llamado a la funcion y guardando el retorno
+        //Sin el return al llamar a la función no devolvería nada, solo imprimiria el console. No se podria, por ejemplo, operar con otros números
+        //var numeroRetornado = 9;
 
+        function sumaImpar() {
+            return 3 + 5;
+        }
+        var impares = sumaImpar();
+        console.log(impares);
+        console.clear;
+
+        function multiplicacion(numero1, numero2) {
+            return numero1 * numero2; //crear una variable solo para el traspaso es innecesario ej: let multi = numero1*numero2, por eso se retorna directamente la multiplicación
+        }
+        var resultadoMultiplicacion = multiplicacion(34, 76);
+        console.log("El resultado es:", resultadoMultiplicacion);
+
+        function crearNuevoArreglo(numero) {
+            var arreglo = []; //[0,1,2]
+            for (let i = 0; i <= numero; i++) {
+                arreglo.push(i);
+            }
+            return arreglo;
+        }
+        var numeroIngresado = parseInt(prompt("Ingrese un número:", 0));
+        var miArreglo = crearNuevoArreglo(numeroIngresado);
+        console.log(miArreglo);
     </script>
 </body>
 
