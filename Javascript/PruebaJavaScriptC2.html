@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PruebaJavaScriptC2</title>
+</head>
+
+<body>
+    <script>
+        //Código escrito por Javier Labbé
+        //20-10-2022
+        var dia = prompt("Ingrese día de la semana:", "Ej: lunes");
+        var valores_productos = [500, 20, 100];
+
+        //Funcion descuentos
+        function dctoTotal(diaSem, arrValores) {
+            let sumaTotal = 0;
+            let totalCompra = 0;
+            let condicion5 = 0;
+            for (let index = 0; index < arrValores.length; index++) {
+                sumaTotal += arrValores[i];
+                if (arrValores[i] > 10000) {
+                    condicion5 = 1;
+                }
+            }
+            if (diaSem == "martes" || diaSem == "jueves") {
+                totalCompra = sumaTotal * 0.8;
+            } else {
+                totalCompra = sumaTotal;
+                if (condicion5 == 1) {
+                    totalCompra = totalCompra * 0.75;
+                } else {
+                    totalCompra = totalCompra;
+                }
+                return totalCompra;
+            }
+            console.log(dctoTotal(valores_productos));
+            //Función para alertar valor negativo en arreglo.
+            function valor_negativo(arrValores) {
+                for (let index = 0; index < arrValores.length; index++) {
+                    if (arrValores[index] < 0) {
+                        return "Error, valor negativo (" + arrValores[index] + ") encontrado en posición " + index + ". Remplazar por valor positivo."
+                    }
+                }
+                return "¡Valores ingresados con éxito!"
+            }
+            console.log(valor_negativo(valores_productos));
+
+            //Función para encontrar valor del producto más costoso
+            var arregloPrueba = [200, 5500, 900, 7000, 500, 300];
+
+            function valor_max(arrValores) {
+                var num_max = 0;
+                for (let index = 0; index < arrValores.length; index++) {
+                    if (arrValores[index] > num_max) {
+                        num_max = arrValores[index];
+                    }
+                }
+                return "El valor del producto más costoso es: " + num_max;
+            }
+            console.log(valor_max(arregloPrueba));
+
+            //Función para encontrar valor del producto menos costoso
+            function valor_min(arrValores) {
+                var num_min = 99999999999;
+                for (let index = 0; index < arrValores.length; index++) {
+                    if (arrValores[index] < num_min) {
+                        num_min = arrValores[index];
+                    }
+                }
+                return "El valor del producto menos costoso es: " + num_min;
+            }
+            console.log(valor_min(arregloPrueba));
+    </script>
+</body>
+
+</html>
