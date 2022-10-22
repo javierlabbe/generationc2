@@ -11,6 +11,7 @@
 <body>
     <script>
         //1.
+        /*
         var num_1 = parseInt(prompt("Ingrese un número: ", ));
         var num_2 = parseInt(prompt("Ingrese un segundo número: ", ));
         var suma = num_1 + num_2;
@@ -66,17 +67,53 @@
         }
 
         //LOOPS
+        //11.
         var contador = parseInt(prompt("Ingrese un número:"));
         var num = 1;
         while (num <= contador) {
             console.log(num);
             num++
         }
-
+        //12.
         var num = parseInt(prompt("Ingrese un número:"));
         for (let i = 1; i < num; i += 2) {
             numero = i;
         }
+
+        //13.
+        var num = parseInt(prompt("Ingrese un número:"));
+        for (let i = num; i >= 1; i--) {
+            num = i;
+            console.log(i);
+        }
+
+        //14.
+        for (let i = 1; i <= 10; i++) {
+            console.log(9 * i);
+        }
+
+        //15.
+        var numero = prompt("Ingrese un número: ")
+        let suma = 0;
+        if (Number.isInteger(parseInt(numero))) {
+            for (let i = 0; i < numero.length; i++) {
+                suma += parseInt(numero[i]);
+            }
+        } else {
+            "Ingrese número válido."
+        }
+        console.log(suma);
+*/
+        //16.
+        var num_1 = parseInt(prompt("Ingrese primer número:"));
+        var num_2 = parseInt(prompt("Ingrese segundo número:"));
+        var suma = 0;
+        for (let i = num_1; i <= num_2; i++) {
+            if (i % 2 == 0) {
+                suma += i;
+            }
+        }
+        console.log(suma);
     </script>
 </body>
 
