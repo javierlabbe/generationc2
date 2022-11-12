@@ -1,12 +1,12 @@
 /* TABLAS */
 
 	-- CREAR TABLA
-CREATE TABLE generationc2.tecnicos ( 
+CREATE TABLE generationc2.tecnicos ( -- tabla 1 
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, -- primary key asignado a columna id 
 	nombre varchar(100) NOT NULL,
 	apellido varchar(100) NOT NULL
 --  PRIMARY KEY (id) * otra opción para agregar PK *
---  FOREIGN KEY (nombreCol_id) REFERENCES nombreTabla2(id) 	 * nombreCol_id es columna de tabla1 que sera FK para referenciar con PK de Tabla2 (id)
+--  FOREIGN KEY (nombreCol_id) REFERENCES nombreTabla2(id) 	 * nombreCol_id es columna de tabla1 que sera FK para relacionar con PK de Tabla2 (id)
 	);
 
 	-- ELIMINAR TABLA
