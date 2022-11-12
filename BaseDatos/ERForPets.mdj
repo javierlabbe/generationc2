@@ -1503,6 +1503,74 @@
 							"headNameLabel": {
 								"$ref": "AAAAAAGEWH0RPerBNqk="
 							}
+						},
+						{
+							"_type": "ERDEntityView",
+							"_id": "AAAAAAGEYZITYugq9Qs=",
+							"_parent": {
+								"$ref": "AAAAAAGEWDsHd+fbGqM="
+							},
+							"model": {
+								"$ref": "AAAAAAGEYZITYegoQVA="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGEYZITYugry7s=",
+									"_parent": {
+										"$ref": "AAAAAAGEYZITYugq9Qs="
+									},
+									"font": "Arial;13;1",
+									"left": 96,
+									"top": 1173,
+									"width": 296,
+									"height": 13,
+									"text": "Raza"
+								},
+								{
+									"_type": "ERDColumnCompartmentView",
+									"_id": "AAAAAAGEYZITYugseS0=",
+									"_parent": {
+										"$ref": "AAAAAAGEYZITYugq9Qs="
+									},
+									"model": {
+										"$ref": "AAAAAAGEYZITYegoQVA="
+									},
+									"subViews": [
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGEYZIuLOg4y1E=",
+											"_parent": {
+												"$ref": "AAAAAAGEYZITYugseS0="
+											},
+											"model": {
+												"$ref": "AAAAAAGEYZIuFOg1ruU="
+											},
+											"font": "Arial;13;0",
+											"left": 101,
+											"top": 1196,
+											"width": 286,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 96,
+									"top": 1191,
+									"width": 296,
+									"height": 23
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 96,
+							"top": 1168,
+							"width": 296,
+							"height": 240,
+							"nameLabel": {
+								"$ref": "AAAAAAGEYZITYugry7s="
+							},
+							"columnCompartment": {
+								"$ref": "AAAAAAGEYZITYugseS0="
+							}
 						}
 					]
 				},
@@ -2275,6 +2343,25 @@
 						"$ref": "AAAAAAGEWDsHdufamUw="
 					},
 					"name": "Entity1"
+				},
+				{
+					"_type": "ERDEntity",
+					"_id": "AAAAAAGEYZITYegoQVA=",
+					"_parent": {
+						"$ref": "AAAAAAGEWDsHdufamUw="
+					},
+					"name": "Raza",
+					"columns": [
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGEYZIuFOg1ruU=",
+							"_parent": {
+								"$ref": "AAAAAAGEYZITYegoQVA="
+							},
+							"name": "idRaza",
+							"length": 0
+						}
+					]
 				}
 			]
 		}
