@@ -15,7 +15,7 @@ CREATE TABLE pedidos (
 	cliente_id INT;
 );
 
--- tabla intermedia o relacional; nombre dado en orden alfabetico > pedido_productos
+-- tabla relacional tipo intermedia; nombre dado en orden alfabetico > pedido_productos
 -- id, fk de la tabla 1, fk tabla 2
 -- id, pedido_id, producto_id
 CREATE TABLE pedidos_productos(
