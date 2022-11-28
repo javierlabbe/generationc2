@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--define el idioma de la página-->
+
+<head>
+    <!--configuraciones, link a otras rutas, exportación del librerias -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--el viewport nos permite que sea responsivo-->
+    <title>Elementos HTML</title>
+    <!--titulo de la pagina que aparece en la pestaña-->
+</head>
+
+<body>
+    <!--cuerpo de la pagina, lo que se ve de la pag. web-->
+    <!--TITULOS o HEADING. van del h1 al h6-->
+    <h1 id="top">Título en H1</h1>
+    <h2>Título en H1</h2>
+    <h3>Título en H1</h3>
+    <h4>Título en H1</h4>
+    <h5>Título en H1</h5>
+    <h6>Título en H1</h6>
+    <br>
+    <!--salto de linea-->
+    <hr>
+    <!--linea horizontal-->
+
+    <!--PARRAFOS-->
+    <p> Esto es un parrafo</p>
+    <p>
+        <b>Itachi Uchiha</b> <i>(うちは イタチ Uchiha Itachi?)</i> <u>es un personaje ficticio</u> de los mangas y animes Naruto y Naruto: Shippūden, creados por Masashi Kishimoto.
+    </p>
+    <p>
+        En el anime y manga, Itachi Uchiha es un ninja renegado considerado un prodigio y portador de numerosas cualidades sobresalientes. Es originario de Konoha, de la cual desertó, y miembro del Clan Uchiha, que fue exterminado por él.
+    </p>
+    <p>
+        Itachi es el primer hijo de Fugaku Uchiha y Mikoto Uchiha. Es hermano mayor de Sasuke Uchiha.
+    </p>
+    <p>
+        Tanto en el anime como en el manga, es considerado un antagonista por muchos de los personajes, tras haber asesinado a casi todos los integrantes de su clan (incluyendo a sus padres y a su novia), además de desertar de su aldea para pasar a formar parte
+        de Akatsuki. Esto dio lugar a que fuera incluido en la lista de delincuentes del "Libro Bingo" como un ninja criminal de rango S.
+    </p>
+    <hr>
+
+    <!--HIPERVINCULO O ANCHOR-->
+    <a href="http://www.sii.cl">vínculo en misma pestaña</a>
+    <br>
+    <a href="http://www.sii.cl" target="_blank">vínculo en nueva pestaña</a>
+    <br>
+    <!--el target es para decidir si abre en la misma o en otra pestaña-->
+
+    <!--ABRIR PAGINA CONTINUA O QUE ESTA EN LA MISMA UBICACION-->
+    <a href="pagina2.html"> para ir a la pagina2</a>
+    <br>
+
+    <!--NAVEGAR DENTRO DE LA MISMA PAGINA-->
+    <a href="#top">ir arriba</a>
+    <br>
+    <hr>
+
+    <!--IMAGENES-->
+    <img src="assets/img/itachi.jpg" width="600" alt="">
+    <!--alt es para que muestre una imagen alternativa por si no muestra la primera opcion-->
+    <!--ancho y alto son atributos de imagenes-->
+    <!-- se puede establecer el alto tambien con height. al solo establecer ancho con width sin alto se ajusta automaticamente para mantener la proporción-->
+    <br>
+    <a href="https://es.wikipedia.org/wiki/Itachi_Uchiha" target="_blank">
+        <img src="assets/img/itachi2.png" width="400" alt="">
+    </a>
+    <br>
+    <hr>
+    <!--LISTAS UL(UNORDER LIST) Y OL(ORDER LIST)-->
+    <ol>
+        <li>Shopper</li>
+        <!--li = list item-->
+        <li>Sanyi</li>
+        <li>Zoro</li>
+        <li>
+            <ol>
+                <li>lista OL dentro de lista OL</li>
+            </ol>
+        </li>
+    </ol>
+    <br>
+
+    <!--se pueden tener hasta tres niveles de marcador colocando una lista dentro de otra-->
+    <ul>
+        <li>lista grupos</li>
+        <li>
+            <ul>
+                <li>grupo 6
+                    <ul>
+                        <li>Javier Labbé</li>
+                        <li>Francisca Lazo</li>
+                        <li>Julian Ordens</li>
+                        <li>Rocio Quezada</li>
+                        <li>Luis Serrano</li>
+                    </ul>
+                </li>
+                <li>grupo 3</li>
+                <li>grupo 5</li>
+                <li>grupo 1</li>
+                <li>grupo 4</li>
+                <li>grupo 2</li>
+            </ul>
+        </li>
+
+    </ul>
+    <br>
+    <hr>
+    <!--TABLAS filas y columnas-->
+    <!-- table: thead tbody-->
+    <!--en thead van los encabezados-->
+    <table>
+        <thead>
+            <tr>
+                <!--tr: table row. cuantos registros-->
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alejandro</td>
+                <td>ale@example.com</td>
+                <td>qwerty</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Israel</td>
+                <td>isra@example.com</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Andrea</td>
+                <td></td>
+                <!--si no viene un registro igual crearlo vacio, si no se correrian los registros que vienen-->
+                <td>qweasd2334</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
