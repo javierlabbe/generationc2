@@ -24,6 +24,74 @@
     <br><br>
     <label for="pass">Ingrese password:</label>
     <input type="password" id="pass" name="pass" placeholder="ingrese password">
+    <br>
+    <hr>
+    <!--RADIO BUTTON-->
+    <!--es para escoger UNA sola opción entre pocas opciones-->
+    <h2>Radio buttons</h2>
+    <label for="femenino">Femenino</label>
+    <input type="radio" id="femenino" name="sexo" value="femenino">
+    <!--value se usa para este tipo de elemento-->
+    <!--name es como nombre de la variable y value el valor-->
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="masculino" name="sexo" value="masculino">
+    <label for="">Prefiero no decir</label>
+    <input type="radio" id="pnd" name="sexo" value="pnd">
+    <br>
+    <hr>
+    <!--SELECT O COMBOBOX-->
+    <!--nos permite desplegar muchas opciones-->
+    <!--por default se selecciona la primera opcion, por eso se agrega primero un option con value 0-->
+    <h2>Select o Combobox</h2>
+    <select name="sexo2" id="sexo2"><!--luego de id se puede añadir multiple, permite seleccionar con ctrl mas de una opcion-->
+        <option value="0">Seleccione su sexo</option>
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Masculino</option>
+        <option value="pnd">Prefiero no decir</option>
+    </select>
+    <br>
+    <hr>
+
+    <!--CHECKBOXES-->
+    <!--nos permite seleccionar mas de una opcion o NINGUNA-->
+    <h2>Checkboxes</h2>
+    <label for="lunes">Lunes</label>
+    <input type="checkbox" id="lunes" name="dia" value="1">
+    <br>
+    <label for="martes">Martes</label>
+    <input type="checkbox" id="martes" name="dia" value="2">
+    <br>
+    <label for="miercoles">Miercoles</label>
+    <input type="checkbox" id="miercoles" name="dia" value="3">
+    <br>
+    <label for="jueves">Jueves</label>
+    <input type="checkbox" id="jueves" name="dia" value="4">
+    <br>
+    <input type="checkbox" id="viernes" name="dia" value="5">
+    <label for="viernes">Viernes</label>
+    <!--se puede cambiar la checkbox de lado-->
+    <br>
+    <hr>
+
+    <!--TEXTAREA-->
+    <!--por lo general se agregan para una descripción-->
+    <!--row filas cols columnas-->
+    <textarea id="" name="" placeholder="escribe" rows="10" cols="100"></textarea>
+    <br>
+    <hr>
+    <!--HIDDEN (CUADRO OCULTO)-->
+    <!--cuadros de input que el usuario no vera-->
+    <input type="hidden" id="" name="">
+    <br>
+    <hr>
+    <!--BOTONES-->
+    <!-- cuando el type es button nosotros programamos la accion-->
+    <!--onclick es para que haga una funcion al hacer click en el boton-->
+    <input type="button" value="Aceptar" onclick="alert('hola')">
+    <br><br>
+    <!--type submit envia la información al backend (es su acción)-->
+    <input type="submit" value="Enviar">
+
 </body>
 
 </html>
