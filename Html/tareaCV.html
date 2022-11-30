@@ -6,55 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
-    <h1>Javier Ignacio Labbé Soto</h1>
-    <br>
-    <img src="assets/img/fotojl.jpeg" width="100" alt="">
-    <h2>Descripción</h2>
-    <p>Mi interes por la programación me llevó a aprenderla de forma autodidacta en un principio. Actualmente, me encuentro finalizando un bootcamp en Generation con el fin de convertirme en un desarrollador full stack.</p>
-    <p>Poseo gran interes por el aprendizaje continuo y mi objetivo es desarrollarme profesionalmente en el rubro de la tecnología.</p>
-    <p>También soy Constructor Civil titulado de la Pontificia Universidad Católica de Chile. Profesión que me ha permitido desarrollar habilidades de gestión de proyecto, liderazgo y trabajo en equipo.</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+                <img src="assets/img/fotojl.jpeg" width="100" alt="">
+            </div>
+            <div class="col">
+                <h1>Javier Ignacio Labbé Soto</h1>
+                <br>
+                <h2>Descripción</h2>
+                <p>Mi interes por la programación me llevó a aprenderla de forma autodidacta en un principio. Actualmente, me encuentro finalizando un bootcamp en Generation con el fin de convertirme en un desarrollador full stack.
+                </p>
+                <p>Poseo gran interes por el aprendizaje continuo y mi objetivo es desarrollarme profesionalmente en el rubro de la tecnología.</p>
+                <p>También soy Constructor Civil titulado de la Pontificia Universidad Católica de Chile. Profesión que me ha permitido desarrollar habilidades de gestión de proyecto, liderazgo y trabajo en equipo.</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <form action="ruta" method="post">
+            <div>
+                <h2>Habilidades Blandas</h2>
+                <select class="form-select" multiple aria-label="multiple select example" style="width: 25%;">
+                <option selected>Seleccione las habilidades blandas</option>
+                <option value="comunicacion">Comunicación</option>
+                <option value="gestionDelTiempo">Gestión del tiempo</option>
+                <option value="orientacionAlDetalle">Orientación al detalle</option>
+                <option value="trabajoEnEquipo">Trabajo en equipo</option>
+            </select>
 
-    <br>
-    <hr>
-    <form action="ruta" method="post">
-        <h2>Habilidades Blandas</h2>
-        <select name="habilidadesBlandas" id="hb">
-        <option value="0">Seleccione las habilidades blandas</option>
-        <option value="comunicacion">Comunicación</option>
-        <option value="gestionDelTiempo">Gestión del tiempo</option>
-        <option value="orientacionAlDetalle">Orientación al detalle</option>
-        <option value="trabajoEnEquipo">Trabajo en equipo</option>
-    </select>
-        <br><br>
-        <hr>
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Basketball</li>
-            <li>Tocar guitarra</li>
-            <li>Escuchar podcasts</li>
-            <li>Escuchar música</li>
-            <li>Ver series/películas/anime</li>
-        </ul>
-        <br>
-        <hr>
-        <h2>Habilidades Técnicas</h2>
-        <label for="javascript">JavaScript</label>
-        <input type="checkbox" id="javascript" name="ht" value="1">
-        <br>
-        <label for="java">Java</label>
-        <input type="checkbox" id="java" name="ht" value="1">
-        <br>
-        <label for="python">Python</label>
-        <input type="checkbox" id="python" name="ht" value="1">
-        <br>
-        <label for="mysql">mySQL</label>
-        <input type="checkbox" id="mysql" name="ht" value="1">
-        <br><br><br>
-        <input type="submit" value="Enviar">
+                <br><br>
+                <hr>
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Basketball</li>
+                    <li>Tocar guitarra</li>
+                    <li>Escuchar podcasts</li>
+                    <li>Escuchar música</li>
+                    <li>Ver series/películas/anime</li>
+                </ul>
+            </div>
+            <div>
+                <hr>
+                <h2>Habilidades Técnicas</h2>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    JavaScript
+                </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Java
+                </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Python
+                </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    mySQL
+                </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    BootStrap
+                </label>
+                </div>
+                <br><br><br>
+                <input type="submit" value="Enviar">
+            </div>
+    </div>
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
 </html>
